@@ -30,6 +30,7 @@ const TodoList: React.FC = () => {
 			<div style={{ display: 'flex', marginTop: 20 }}>
 				{pages.map((p) => (
 					<div
+						key={p}
 						onClick={() => setTodoPage(p)}
 						style={{
 							border:
